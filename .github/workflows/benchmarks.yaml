@@ -42,7 +42,7 @@ jobs:
 
       - name: Run tests
         shell: bash
-        run: make test-benchmark
+        run: vendor/phpunit/phpunit/phpunit tests/phpunit/BenchmarkSmokeTest.php
 
   benchmarks:
       runs-on: ubuntu-latest
